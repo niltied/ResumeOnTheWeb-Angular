@@ -16,7 +16,9 @@ ENV PATH /amruthpillai/node_modules/.bin:$PATH
 RUN apk add git
 RUN npm install -g @angular/cli
 COPY package.json /amruthpillai/package.json
-RUN npm install
+RUN npm i -g npm-check-updates
+RUN ncu -u
+RUN npm install --force
 
 # Copy App
 COPY . /amruthpillai
