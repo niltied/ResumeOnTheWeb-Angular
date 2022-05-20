@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { TooltipModule, TabsModule } from 'ngx-bootstrap';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [],
